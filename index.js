@@ -5,8 +5,8 @@ const port = process.env.PORT || 3000;
 
 // MySQL connection
 const pool = mysql.createPool({
-  host: "database-2.cpqswk648zmf.eu-north-1.rds.amazonaws.com",
-  user: "admin",
+  host: "database-2.cf00csegghpu.us-east-1.rds.amazonaws.com",
+  user: "root",
   password: "pass1234",
   database: "userDB",
   port: 3306,
