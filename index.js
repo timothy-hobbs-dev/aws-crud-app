@@ -25,7 +25,7 @@ app.post('/users', async (req, res) =>
   {
     const { username, age } = req.body;
     const [result] = await pool.query('INSERT INTO users (username, age) VALUES (?, ?)', [username, age]);
-    res.status(201).json({ message:"Hey i just made a change" });
+    res.status(201).json({ message:"Hey i just made another change today" });
   } catch (err)
   {
     console.error(err);
